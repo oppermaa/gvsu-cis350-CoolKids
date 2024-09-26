@@ -15,5 +15,5 @@ Discussion points:
 Goals for next week (include responsibilities):
 
 * Setup Jira
-* Update GitHub README
+* Continue working on converter.py
 * Create a visual design for the application
