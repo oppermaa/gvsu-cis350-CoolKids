@@ -9,7 +9,6 @@ Project description (~1 paragraph)
 
 * [Adam Opperman](https://github.com/oppermaa/CIS350-HW2-opperman) (Captain, Testing, Visual Design, Documentation)
 * [Shamurat (Shon) Raimbekov](https://github.com/opperman/CIS350-HW2-opperman) (Backend Development, Frontend Development, Backend Logic/DevOps)
-* Member 3 (Role 5, Role 6)
 
 ## Prerequisites
 
