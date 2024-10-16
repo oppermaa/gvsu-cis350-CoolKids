@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Menu Section -->
+    <header>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+        <div class="country-select">
+            <select id="country-dropdown">
+                <!-- Countries will be dynamically added here -->
+            </select>
+            <p id="country-system">System Suggestion: Metric</p>
+        </div>
+        <div class="theme-toggle">
+            <button id="toggle-theme">
+                <span id="theme-icon">☀️</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="conversion-options">
+            <select id="measurement-type">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="liquid">Liquid</option>
+            </select>
+
+            <button id="switch-system">⇆</button>
+
+            <div class="converter">
+                <input type="number" id="value-input" placeholder="Enter value">
+                <p id="converted-value">Converted Value: </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Side Menu -->
+    <nav id="side-menu" class="hidden">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Toggle theme between dark and light modes based on user time or button click
+        const toggleButton = document.getElementById('toggle-theme');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Switch between light and dark mode based on time (8 AM - 8 PM is light mode)
+        const currentHour = new Date().getHours();
+        if (currentHour >= 8 && currentHour < 20) {
+            body.classList.remove('dark-mode');
+            themeIcon.textContent = '☀️';  // Bright mode
+        } else {
+            body.classList.add('dark-mode');
+            themeIcon.textContent = '🌙';  // Dark mode
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.textContent = '🌙';
+            } else {
+                themeIcon.textContent = '☀️';
+            }
+        });
+
+        // Menu toggle
+        const menuIcon = document.querySelector('.menu-icon');
+        const sideMenu = document.getElementById('side-menu');
+
+        menuIcon.addEventListener('click', () => {
+            sideMenu.classList.toggle('visible');
+        });
+
+        // Placeholder function to populate the country dropdown
+        const countryDropdown = document.getElementById('country-dropdown');
+        const countrySystem = document.getElementById('country-system');
+
+        const countries = [
+            { name: 'United States', system: 'Imperial' },
+            { name: 'Cambodia', system: 'Metric' },
+            { name: 'Netherlands', system: 'Metric' },
+        ];
+
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country.name;
+            option.textContent = country.name;
+            countryDropdown.appendChild(option);
+        });
+
+        countryDropdown.addEventListener('change', () => {
+            const selectedCountry = countries.find(c => c.name === countryDropdown.value);
+            countrySystem.textContent = `System Suggestion: ${selectedCountry.system}`;
+        });
+    </script>
+</body>
+</html>
