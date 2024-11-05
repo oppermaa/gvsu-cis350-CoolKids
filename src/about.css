@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.about-content h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.about-content p {
+    line-height: 1.6;
+}
+
+.about-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.about-content ul li {
+    margin: 5px 0;
+}
