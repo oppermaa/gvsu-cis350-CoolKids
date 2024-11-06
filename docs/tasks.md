@@ -14,7 +14,7 @@
 2) **Task Name:** Frontend Design and Layout
    - **Description:** Create the user interface and layout using HTML, CSS, and JavaScript.
    - **Expected Time to Complete:** 6 hours
-   - **Responsible:** Adam Opperman Shamurat (Shon) Raimbekov
+   - **Responsible:** Adam Opperman & Shamurat (Shon) Raimbekov
 
 3) **Task Name:** Dark and Bright Mode Feature
    - **Description:** Add a toggle switch for dark and bright modes based on user preference and time.
