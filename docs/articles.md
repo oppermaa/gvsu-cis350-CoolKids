@@ -13,13 +13,13 @@ Articles:
 ### *Turkish Okka (Weight):*
 1 okka = 1.2829 kg
 
-Derived from Ottoman measurements, this unit of weight is rarely used today, if at all.
+Derived from Ottoman methods of measurement, this unit of weight is rarely used today, if at all.
 
 Articles:
 - [Use and variations across other cultures](https://en.wikipedia.org/wiki/Oka_(mass))
 - [General overview and history of the Okka](https://belleten.gov.tr/tam-metin/1444/eng)
 
-### *Mexican Vara  (Length):*
+### *Mexican Vara (Length):*
 1 vara = 0.8359 m
 
 Originally a Spanish unit of length, the Vara has been localized in Mexico, several US states, and some other locations, and it is commonly used today.
