@@ -3,7 +3,7 @@
 ### *Korean Pyeong (Area):*
 1 pyeong = 3.31 m<sup>2</sup>
 
-Still used informally, primarily for real estate.
+An older unit of area that has been used in different forms across Asia, it is still used informally today for real estate purposes.
 
 Articles:
 - [Variations across other cultures](https://en.wikipedia.org/wiki/Pyeong)
@@ -13,7 +13,7 @@ Articles:
 ### *Turkish Okka (Weight):*
 1 okka = 1.2829 kg
 
-Derived from Ottoman measurements, used somewhat rarely today.
+Derived from Ottoman measurements, this unit of weight is rarely used today, if at all.
 
 Articles:
 - [Use and variations across other cultures](https://en.wikipedia.org/wiki/Oka_(mass))
@@ -22,7 +22,7 @@ Articles:
 ### *Mexican Vara  (Length):*
 1 vara = 0.8359 m
 
-Originally Spanish, but localized in Mexico, US states, and other locations. Still in use today.
+Originally a Spanish unit of length, the Vara has been localized in Mexico, several US states, and some other locations, and it is commonly used today.
 
 Articles:
 - [Really nice history and overview of the Vara](https://www.nist.gov/blogs/taking-measure/vara-standard-length-not-so-standard-history)
@@ -31,27 +31,25 @@ Articles:
 ### *Egyptian Hekat (Volume):*
 1 hekat = 4.8 L
 
-Egyptian unit that a lot of early math and trade were done with, not in use today.
+An Egyptian unit of volume that a lot of early math and trade were done with. The Hekat is not in use today.
 
 Articles:
 - [Mathematical overview of the Hekat and other related units](https://en.wikipedia.org/wiki/Hekat)
 - [Cultural significance of the Hekat](https://library.fiveable.me/key-terms/ancient-times-myth-history-measurement/egyptian-hekat)
 
 ### *Delisle (Temperature):*
-0° D = 100° C
+0° D = 100° C, 150° D = 0° C
 
-150° D = 0° C
-
-With water’s boiling point as 0° D, Delisle was invented by a French astronomer as an inverted temperature scale. Was used in Russia for nearly 100 years, but rarely (if ever) used today.
+With water’s boiling point as 0° D, Delisle was invented by a French astronomer as an inverted temperature scale. It was used in Russia for nearly 100 years, but rarely used today.
 
 Articles:
-- [General overview, history, and conversions (including visuals)](https://en.wikipedia.org/wiki/Delisle_scale)
+- [General overview, history, conversions, and visuals](https://en.wikipedia.org/wiki/Delisle_scale)
 - [Convertor with additional information overview](https://www.metric-conversions.org/temperature/delisle-conversion.htm)
 
 ### *Shake (Time):*
 1 shake = 10 nanoseconds
 
-Used in nuclear physics as the amount of time that it takes for a single step of a nuclear chain reaction to occur.
+Shakes are commonly used in nuclear physics as the amount of time that it takes for a single step of a nuclear chain reaction to occur.
 
 Articles:
 - [General overview](https://en.wikipedia.org/wiki/Shake_(unit))
