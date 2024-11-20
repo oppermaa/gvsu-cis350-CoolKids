@@ -1,7 +1,7 @@
-# Miscillaneous Units and Articles
+# Miscellaneous Units and Articles
 
 ### *Korean Pyeong (Area):*
-1 pyeong = 3.31 m^2^
+1 pyeong = 3.31 m<sup>2</sup>
 
 Still used informally, primarily for real estate.
 
