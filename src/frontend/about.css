@@ -1,9 +1,17 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* For dark mode */
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .container {
@@ -12,13 +20,15 @@ body {
     padding: 20px;
 }
 
+/* Header Styling */
 header h1 {
     text-align: center;
     color: #0056b3;
 }
 
+/* Section Content Styling */
 .about-content h2 {
-    color: #333;
+    color: #007acc;
     margin-top: 20px;
 }
 
@@ -33,4 +43,71 @@ header h1 {
 
 .about-content ul li {
     margin: 5px 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #007acc;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Font Size Adjustment */
+body.font-small {
+    font-size: 0.9em;
+}
+
+body.font-large {
+    font-size: 1.1em;
+}
+
+/* Link Styling */
+.about-content a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
 }

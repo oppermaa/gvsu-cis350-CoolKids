@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
     <!-- Welcome Message -->
     <h1>Welcome to the Unit Converter!</h1>
 
@@ -28,13 +27,14 @@
     <!-- Country Selection and Suggestion -->
     <label for="country-select">Select your country (or detected by location):</label>
     <select id="country-select">
-        <!-- Adam, we either need to enter the list manually or fetch it using country-data.js -->
         <option value="default">Your current location</option>
         <option>United States</option>
-        <option>St. Vincent and Grenadines </option>    
-        <!-- More options here -->
+        <option>St. Vincent and Grenadines</option>
+        <option>Kyrgyzstan</option>    
+        <!-- More options fetched dynamically -->
     </select>
-    <p id="system-suggestion">Suggested Unit System: <!-- This will show Imperial or Metric based on country --></p>
+    <p id="system-suggestion">Suggested Unit System: <!-- Fetched dynamically --></p>
+
     <!-- Horizontal Line -->
     <hr style="border: 2px solid blue;">
 
@@ -82,8 +82,18 @@
         <button type="button" id="convert-button">Convert</button>
     </form>
 
+    <!-- Added Navbar for Horizontal Navigation -->
+    <nav style="background-color: lightgray; padding: 10px; text-align: center; margin-top: 20px;">
+        <a href="index.html" style="margin-right: 20px;">Home</a>
+        <a href="articles.html" style="margin-right: 20px;">Articles</a>
+        <a href="about.html" style="margin-right: 20px;">About Us</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
     <!-- Scripts linked to JavaScript files -->
-    <script src="index.js"></script>
     <script src="country-data.js"></script>
+    <script src="index.js"></script>
+    <script src="settings.js"></script>
+
 </body>
 </html>

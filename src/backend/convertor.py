@@ -3,7 +3,7 @@ from pint import UnitRegistry
 # Initialize the Unit Registry
 ureg = UnitRegistry()
 
-# Dictionary to map conversion types to specific functions
+# Dictionary to map conversion types to specific units (for reference or UI purposes, not directly used in conversion)
 conversion_types = {
     "Area": ["square_kilometer", "square_meter", "square_centimeter", "square_mile", "square_yard", "square_foot", "square_inch", "hectare", "acre"],
     "Data Transfer Rate": ["bit/second", "kilobit/second", "kilobyte/second", "kibibit/second", "megabit/second", "megabyte/second", "mebibit/second", "gigabit/second", "gigabyte/second", "gibibit/second", "terabit/second", "terabyte/second", "tebibit/second"],
@@ -21,7 +21,7 @@ conversion_types = {
     "Volume": ["gallon", "quart", "pint", "cup", "fluid_ounce", "tablespoon", "teaspoon", "cubic_meter", "liter", "milliliter"]
 }
 
-def convert_units(value, from_unit, to_unit):
+def convert(value, from_unit, to_unit):
     """
     Converts a value from one unit to another using pint's UnitRegistry.
 
@@ -34,29 +34,44 @@ def convert_units(value, from_unit, to_unit):
     - float: the converted value
     """
     try:
+        # Ensure units are lowercase for compatibility
+        from_unit = from_unit.lower()
+        to_unit = to_unit.lower()
+
         # Define the quantity in the from_unit
         quantity = value * ureg(from_unit)
+        
         # Convert the quantity to the to_unit
         converted_quantity = quantity.to(to_unit)
-        return converted_quantity.magnitude  # Return only the numeric value
-    except Exception as e:
-        print(f"Error converting from {from_unit} to {to_unit}: {e}")
-        return None
 
-# Test cases for the function
+        # Return only the numeric value
+        return converted_quantity.magnitude
+    except Exception as e:
+        # Raise an error with detailed information
+        raise ValueError(f"Error converting from {from_unit} to {to_unit}: {e}")
+
+# Debugging tests for standalone execution
 if __name__ == "__main__":
-    # Example conversions
-    print("Area Conversion: 1 square kilometer to square mile =", convert_units(1, "square_kilometer", "square_mile"))
-    print("Data Transfer Rate Conversion: 1000 bits/second to kilobits/second =", convert_units(1000, "bit/second", "kilobit/second"))
-    print("Digital Storage Conversion: 1 gigabyte to megabyte =", convert_units(1, "gigabyte", "megabyte"))
-    print("Energy Conversion: 1 kilojoule to calorie =", convert_units(1, "kilojoule", "calorie"))
-    print("Frequency Conversion: 1 megahertz to hertz =", convert_units(1, "megahertz", "hertz"))
-    print("Fuel Economy Conversion: 1 kilometer/liter to mile/gallon =", convert_units(1, "kilometer/liter", "mile/gallon"))
-    print("Length Conversion: 1 kilometer to mile =", convert_units(1, "kilometer", "mile"))
-    print("Mass Conversion: 1 kilogram to pound =", convert_units(1, "kilogram", "pound"))
-    print("Plane Angle Conversion: 1 degree to radian =", convert_units(1, "degree", "radian"))
-    print("Pressure Conversion: 1 atm to pascal =", convert_units(1, "atm", "pascal"))
-    print("Speed Conversion: 100 kilometer/hour to mile/hour =", convert_units(100, "kilometer/hour", "mile/hour"))
-    print("Temperature Conversion: 100 celsius to fahrenheit =", convert_units(100, "celsius", "fahrenheit"))
-    print("Time Conversion: 1 day to seconds =", convert_units(1, "day", "second"))
-    print("Volume Conversion: 1 gallon to liter =", convert_units(1, "gallon", "liter"))
+    test_cases = [
+        (1, "square_kilometer", "square_mile"),
+        (1000, "bit/second", "kilobit/second"),
+        (1, "gigabyte", "megabyte"),
+        (1, "kilojoule", "calorie"),
+        (1, "megahertz", "hertz"),
+        (1, "kilometer/liter", "mile/gallon"),
+        (1, "kilometer", "mile"),
+        (1, "kilogram", "pound"),
+        (1, "degree", "radian"),
+        (1, "atm", "pascal"),
+        (100, "kilometer/hour", "mile/hour"),
+        (100, "celsius", "fahrenheit"),
+        (1, "day", "second"),
+        (1, "gallon", "liter")
+    ]
+    
+    for value, from_unit, to_unit in test_cases:
+        try:
+            result = convert(value, from_unit, to_unit)
+            print(f"Converted {value} {from_unit} to {to_unit}: {result}")
+        except ValueError as e:
+            print(e)

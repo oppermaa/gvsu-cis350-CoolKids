@@ -1,8 +1,10 @@
-/* style.css */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -11,84 +13,131 @@ body {
     color: #ffffff;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#country-dropdown, #measurement-type {
-    padding: 5px;
-    font-size: 16px;
-}
-
-#toggle-theme {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#switch-system {
-    font-size: 24px;
-    background-color: #008cba;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.converter {
+/* Welcome Message */
+h1 {
+    text-align: center;
     margin-top: 20px;
 }
 
-#value-input {
-    padding: 10px;
-    font-size: 16px;
-}
-
-#converted-value {
-    margin-top: 10px;
-}
-
+/* Horizontal Navbar */
 nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100%;
     background-color: #333;
-    padding-top: 20px;
-    display: none;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    padding: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
+    text-decoration: underline;
 }
 
-.hidden {
-    display: none;
-}
-
-.visible {
+/* Form and Dropdown Styles */
+label {
     display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f8b;
+}
+
+/* Horizontal Line */
+hr {
+    border: 2px solid blue;
+    margin: 20px 0;
+}
+
+/* Conversion Guide */
+p {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Country Selection and Suggestion */
+#country-select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#system-suggestion {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Conversion Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form div label {
+    flex: 1;
+}
+
+form div input {
+    flex: 2;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Footer Navbar */
+nav.footer-nav {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav.footer-nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.footer-nav a:hover {
+    text-decoration: underline;
 }
