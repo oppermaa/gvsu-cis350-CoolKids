@@ -1,7 +1,6 @@
 # Overview
 
-<Describe the purpose of this document in 1 paragraph of less … hint: it is
-your SRS>
+The purpose of this document is to outline the functional and non-functional requirements for the development of the Unit Conversion Tool. This tool will allow users to convert units between Metric and Imperial systems, provide location-based suggestions for measurement systems, and offer accessibility options like dark mode and font size adjustments. It will include both web and mobile versions, ensuring compatibility across different devices and offering users an intuitive interface for their conversion needs.
 
 # Software Requirements
 
