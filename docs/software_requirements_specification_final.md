@@ -16,25 +16,28 @@ your SRS>
 | FR1 | <Requirement 1> |
 | FR2 | <Requirement 2> |
 | FR3 | <Requirement 3> |
-| … | … |
+| FR4 | <Requirement 4> |
+| FR5 | <Requirement 5> |
 
 ### <Name of Feature 2>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR4 | <Requirement 1> |
-| FR5 | <Requirement 2> |
-| FR6 | <Requirement 3> |
-| … | … |
+| FR6 | <Requirement 6> |
+| FR7 | <Requirement 7> |
+| FR8 | <Requirement 8> |
+| FR9 | <Requirement 9> |
+| FR10 | <Requirement 10> |
 
-### <Name of Feature 2>
+### <Name of Feature 3>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR1 | <Requirement 1> |
-| FR2 | <Requirement 2> |
-| FR3 | <Requirement 3> |
-| … | … |
+| FR11 | <Requirement 11> |
+| FR12 | <Requirement 12> |
+| FR13 | <Requirement 13> |
+| FR14 | <Requirement 14> |
+| FR15 | <Requirement 15> |
 
 ## Non-Functional Requirements
 
@@ -43,30 +46,35 @@ your SRS>
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR1 | <Non-Functional Requirement 1> |
-| NFR2 | < Non-Functional Requirement 2> |
-| NFR3 | < Non-Functional Requirement 3> |
-| … | … |
+| NFR2 | <Non-Functional Requirement 2> |
+| NFR3 | <Non-Functional Requirement 3> |
+| NFR4 | <Non-Functional Requirement 4> |
+| NFR5 | <Non-Functional Requirement 5> |
 
 ### <Name of Feature 2>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | <Non-Functional Requirement 1> |
-| NFR2 | < Non-Functional Requirement 2> |
-| NFR3 | < Non-Functional Requirement 3> |
-| … | … |
+| NFR6 | <Non-Functional Requirement 6> |
+| NFR7 | <Non-Functional Requirement 7> |
+| NFR8 | <Non-Functional Requirement 8> |
+| NFR9 | <Non-Functional Requirement 9> |
+| NFR10 | <Non-Functional Requirement 10> |
 
 ### <Name of Feature 3>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | <Non-Functional Requirement 1> |
-| NFR2 | < Non-Functional Requirement 2> |
-| NFR3 | < Non-Functional Requirement 3> |
-| … | … |
+| NFR11 | <Non-Functional Requirement 11> |
+| NFR12 | <Non-Functional Requirement 12> |
+| NFR13 | <Non-Functional Requirement 13> |
+| NFR14 | <Non-Functional Requirement 14> |
+| NFR15 | <Non-Functional Requirement 15> |
 
 # Software Artifacts
 
 <Describe the purpose of this section>
 
-* [I am a link](to_some_file.pdf)
+* [Use Case Diagram](../artifacts/use_case_diagram/use_case_diagram.png)
+* [Class / Object Diagram (NEED TO CREATE)](to_some_file.pdf)
+* [Sequence / Communication Diagram (NEED TO CREATE)](to_some_file.pdf)
