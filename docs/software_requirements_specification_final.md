@@ -27,9 +27,36 @@ your SRS>
 | FR6 | <Requirement 3> |
 | … | … |
 
+### <Name of Feature 2>
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| FR1 | <Requirement 1> |
+| FR2 | <Requirement 2> |
+| FR3 | <Requirement 3> |
+| … | … |
+
 ## Non-Functional Requirements
 
 ### <Name of Feature 1>
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 | <Non-Functional Requirement 1> |
+| NFR2 | < Non-Functional Requirement 2> |
+| NFR3 | < Non-Functional Requirement 3> |
+| … | … |
+
+### <Name of Feature 2>
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 | <Non-Functional Requirement 1> |
+| NFR2 | < Non-Functional Requirement 2> |
+| NFR3 | < Non-Functional Requirement 3> |
+| … | … |
+
+### <Name of Feature 3>
 
 | ID | Requirement |
 | :-------------: | :----------: |
