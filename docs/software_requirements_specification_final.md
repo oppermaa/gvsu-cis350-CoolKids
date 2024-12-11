@@ -8,67 +8,67 @@ The purpose of this document is to outline the functional and non-functional req
 
 ## Functional Requirements
 
-### <Name of Feature 1>
+### <Unit Conversion Features>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR1 | <Requirement 1> |
-| FR2 | <Requirement 2> |
-| FR3 | <Requirement 3> |
-| FR4 | <Requirement 4> |
-| FR5 | <Requirement 5> |
+| FR1 | <Allow users to select conversion categories (e.g., Length, Mass).> |
+| FR2 | <Support conversion between units within selected categories.> |
+| FR3 | <Display converted value instantly (Currently Operating in Postman and cURL).> |
+| FR4 | <Ensure accurate conversions using the Pint library.> |
+| FR5 | <Provide dropdowns for "From" and "To" units dynamically based on selection.> |
 
-### <Name of Feature 2>
-
-| ID | Requirement |
-| :-------------: | :----------: |
-| FR6 | <Requirement 6> |
-| FR7 | <Requirement 7> |
-| FR8 | <Requirement 8> |
-| FR9 | <Requirement 9> |
-| FR10 | <Requirement 10> |
-
-### <Name of Feature 3>
+### <Accessibility Feature>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR11 | <Requirement 11> |
-| FR12 | <Requirement 12> |
-| FR13 | <Requirement 13> |
-| FR14 | <Requirement 14> |
-| FR15 | <Requirement 15> |
+| FR6 | <Include dark mode toggle for better visual accessibility.> |
+| FR7 | <Provide font size adjustment buttons.> |
+| FR8 | <Persist user settings for theme and font size across pages.> |
+| FR9 | <Ensure front-end compatability across browsers.> |
+| FR10 | <Maintain accessible navigation for screen readers.> |
+
+### <Front-End Visual Aspects>
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| FR11 | <Provide a consistent navigation bar across all pages.> |
+| FR12 | <Ensure dropdown menus dynamically update on selection.> |
+| FR13 | <Maintain a visually appealing layout for (Home, Articles, AboutUs, and Settings.> |
+| FR14 | <Include responsive design to ensure usability on mobile and desktop.> |
+| FR15 | <Link all pages (Home, Articles, About, Settings) for seamless navigation.> |
 
 ## Non-Functional Requirements
 
-### <Name of Feature 1>
+### <Performance>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | <Non-Functional Requirement 1> |
-| NFR2 | <Non-Functional Requirement 2> |
-| NFR3 | <Non-Functional Requirement 3> |
-| NFR4 | <Non-Functional Requirement 4> |
-| NFR5 | <Non-Functional Requirement 5> |
+| NFR1 | <Ensure conversions execute within 1 second.> |
+| NFR2 | <API calls should not block the UI for more than 2 seconds.> |
+| NFR3 | <Handle up to 1000 simultaneous users without performance degradation.> |
+| NFR4 | <Provide clear error messages for invalid inputs or failed conversions.> |
+| NFR5 | <Ensure smooth navigatio and interaction between all linked pages, such as articles and settings, without noticeable delay or page reload issues.> |
 
-### <Name of Feature 2>
-
-| ID | Requirement |
-| :-------------: | :----------: |
-| NFR6 | <Non-Functional Requirement 6> |
-| NFR7 | <Non-Functional Requirement 7> |
-| NFR8 | <Non-Functional Requirement 8> |
-| NFR9 | <Non-Functional Requirement 9> |
-| NFR10 | <Non-Functional Requirement 10> |
-
-### <Name of Feature 3>
+### <Usability & Scalability>
 
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR11 | <Non-Functional Requirement 11> |
-| NFR12 | <Non-Functional Requirement 12> |
-| NFR13 | <Non-Functional Requirement 13> |
-| NFR14 | <Non-Functional Requirement 14> |
-| NFR15 | <Non-Functional Requirement 15> |
+| NFR6 | <Maintain a clean, responsive UI across devices.> |
+| NFR7 | <Ensure all interactive elements are accessible via keyboard.> |
+| NFR8 | <Allow integration of additional unit categories easily.> |
+| NFR9 | <Ensure code modularity for future feature additions.> |
+| NFR10 | <Implement rate limiting to protect the API from misuse.> |
+
+### <Security>
+
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR11 | <Secure local storage of user preferences for theme and font size.> |
+| NFR12 | <Prevent unauthorized access to API endpoints.> |
+| NFR13 | <Use HTTPS for all communications to ensure secure data transfer.> |
+| NFR14 | <Validate all user inputs to prevent injection attacks.> |
+| NFR15 | <Implement rate limiting to protect the API from misuse.> |
 
 # Software Artifacts
 
