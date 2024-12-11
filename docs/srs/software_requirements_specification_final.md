@@ -78,6 +78,6 @@ The purpose of this document is to outline the functional and non-functional req
 * [Midterm Timeline](../timelines/midterm_timeline.jpg)
 * [Midterm Gantt-Chart](../timelines/gantt-chart.jpg)
 * [Final Gantt-Chart](../timelines/gantt-chart-final.jpg)
-* [Midterm Slide Deck](../slide_decks/<Milometer - Mid Semester Presentation.pdf>)
-* [Final Slide Deck](../slide_decks/<Milometer - Final Presentation.pdf>)
+* [Midterm Slide Deck](../slide_decks/<Milometer%20-%20Mid%20Semester%20Presentation.pdf>)
+* [Final Slide Deck](../slide_decks/<Milometer%20-%20Final%20Presentation.pdf>)
 * [Jira Board](https://cis350coolkids.atlassian.net/jira/software/projects/CCPM/boards/2)
