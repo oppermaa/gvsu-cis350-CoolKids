@@ -75,5 +75,9 @@ The purpose of this document is to outline the functional and non-functional req
 <Describe the purpose of this section>
 
 * [Use Case Diagram](../artifacts/use_case_diagram/use_case_diagram.png)
-* [Class / Object Diagram (NEED TO CREATE)](to_some_file.pdf)
-* [Sequence / Communication Diagram (NEED TO CREATE)](to_some_file.pdf)
+* [Midterm Timeline](../timelines/midterm_timeline.jpg)
+* [Midterm Gantt-Chart](../timelines/gantt-chart.jpg)
+* [Final Gantt-Chart](../timelines/gantt-chart-final.jpg)
+* [Midterm Slide Deck](../slide_decks/Milometer - Mid Semester Presentation.pdf)
+* [Final Slide Deck](../slide_decks/Milometer - Final Presentation.pdf)
+* [Jira Board](https://cis350coolkids.atlassian.net/jira/software/projects/CCPM/boards/2)
